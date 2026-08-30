@@ -27,6 +27,11 @@ a { text-decoration: none; color: inherit; }
 
 img { max-width: 100%; display: block; }
 
+.logo img,
+.social-icon svg {
+  max-width: none;
+}
+
 /* Header */
 .site-header {
   background: var(--white);
