@@ -12,14 +12,15 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'Cairo', sans-serif;
   background: var(--cream);
   color: var(--ink);
   line-height: 1.6;
 }
 
 h1, h2, h3 {
-  font-family: 'Reem Kufi', sans-serif;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
 }
 
 a { text-decoration: none; color: inherit; }
@@ -45,10 +46,21 @@ img { max-width: 100%; display: block; }
 }
 
 .logo {
-  font-family: 'Reem Kufi', sans-serif;
-  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 800;
+  font-size: 1.6rem;
   color: var(--burgundy);
   letter-spacing: 0.5px;
+}
+
+.logo-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .main-nav {
@@ -282,7 +294,7 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
 }
 
-.footer-links a, .footer-contact a {
+.footer-links a {
   display: block;
   font-size: 0.9rem;
   opacity: 0.85;
@@ -290,7 +302,34 @@ img { max-width: 100%; display: block; }
   transition: opacity 0.2s;
 }
 
-.footer-links a:hover, .footer-contact a:hover { opacity: 1; color: var(--gold); }
+.footer-links a:hover { opacity: 1; color: var(--gold); }
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  opacity: 0.85;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.social-icon:hover {
+  opacity: 1;
+  color: var(--gold);
+  transform: translateX(-2px);
+}
+
+.social-icon svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
 
 .footer-copy {
   text-align: center;
